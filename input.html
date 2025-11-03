@@ -7,75 +7,74 @@
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="input.css">
+       <link rel="stylesheet" href="input.css">
 
         <script src="input.js"></script>
 
     </head>
+
     <body>
-        <i class="bi bi-slack"></i>
-        <div class="euphoria">
-            <div class="candy">
+        <i id="fk" class="bi bi-slack icon"></i>
+        <div class="sly">
+            <div class="euphoria">
                 <p>Log In to Whip</p>
             </div>
             <div>
+                
                 <button class="nhie">
                 <i class="bi bi-google icon">
                     Google
                 </i>
             </button>
             </div>
-            
+            <br />
              <div>
                 <button class="nhie">
                 <i class="bi bi-github icon">
                     Github
                 </i>
             </button>
-
+            
             </div>
+            <br />
             <div>
                 <button class="nhie">
                 <i class="bi bi-apple icon">
                     Apple
                 </i>
-            </button>
-            
-
-
-            </div>
+            </button> 
+           </div>
             <h6>OR</h6>
             
-            <form id="loginForm" method="POST" action="/login">
+            <form id="loginForm" method="POST" action="/submit">
                 <div class="roger">
                 <label for="email">Email</label>
                 <br>
-                <input type="email" placeholder="Enter a valid email"
+                <input type="email" placeholder="Enter a valid email" id="email"
                 required autocomplete="email">
-                <div id="email-error" class="error">
-                    Please enter a valid email address
+                <div id="error" class="error">
+                    
                 </div>
             </div>    
 
             <div class="roger">
                 <label for="password">Password</label>
                 <br>
-                <input type="text" name="password" id="passowrd" placeholder="Enter password">
-                <label class="show-password">  
-               <input type="checkbox" id="show-password"> Show Password  
-               </label>
+                <input type="text" name="password" id="passowrd" 
+                equired autocomplete="current-password" minlength="8" placeholder="Enter password">
             </div> 
+            <div id="passError" class="error">Password must be at least 8 characters long.</div>
             </form>
-            <button type="submit">
+            <button type="submit" class="cuz">
                 <i class="bi bi-arrow-right icon">
                     Log In
                 </i>
             </button>
-            <br>
-            <a href="res">Reset Password</a>
+            <br />
+            <a href="res" id="res">Reset Password</a>
            <div>
             <a href="" id="no">No account</a>
-            <a href="new" id="yai">Create one</a>
+            <a href="new" id="no">Create one</a>
            </div>
         </div>
 

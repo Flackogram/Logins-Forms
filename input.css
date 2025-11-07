@@ -6,7 +6,7 @@
     --s2-width: 100%;
     --s3-color: rgba(39, 220, 90, 0.63);
     --s3-boarder: 2px solid rgb(226, 246, 111);
-    --s4-color: rgb(236, 235, 235);
+    --s4-color: rgb(138, 137, 137);
 
 }
 
@@ -20,13 +20,14 @@ body {
     margin: 0;
     padding: var(--s1-padding);
     width: var(--s2-margin);
+    background-color: black;
     
 }
 
 #fk {
     font-size: 46px;
     margin: var(--s2-margin);
-    color: rgb(91, 234, 108);
+    color: rgb(200, 241, 103);
     
 }
 
@@ -34,7 +35,7 @@ body {
     border-radius: 1rem;
     padding: 3rem;
     box-shadow: 0px 0px 0.8px rgba(234, 243, 137, 0.661);
-    background-image: url('bg-2.webp') ;
+    background-color: rgb(231, 230, 230) ;
 }
 
 .euphoria p {
@@ -144,7 +145,7 @@ a:hover {
 }
 
 div p {
-    color: aqua;
+    color: black;
 }
 @media screen and (max-width: 800px) {
     .sly {
